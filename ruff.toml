@@ -6,5 +6,5 @@ select = ["E", "F", "I", "B", "W", "Q", "C4", "N", "UP", "YTT", "RUF"]
 ignore = ["E501", "N802"]
 
 [format]
-quote-style = "double"
 indent-width = 4
+quote-style = "double"
