@@ -5,7 +5,7 @@ def nod(digit_1, digit_2):
         digit_2,
     )  # Сохраняем значения чисел, НОД которых будем искать
     x0, x1 = 1, 0  # Коэффициенты digit1, т. к. digit1 = digit1 * 1 + digit2 * 0
-    y0, y1 = 0, 1  # Аналогично с digit2
+    y0, y1 = 0, 1  # Аналогично c digit2
     while digit_2 != 0:
         quotient = digit_1 // digit_2
         digit_1, digit_2 = digit_2, digit_1 % digit_2
