@@ -1,4 +1,4 @@
-line-lenght = 88
+line lenght = 88
 target-version = "py311"
 
 select = ["E", "F", "I", "B", "W", "Q", "C4", "N", "UP", "YTT", "RUF"]
