@@ -98,7 +98,7 @@ def load_from_mtx(filename):
                 if index < len(data_lines):
                     value_str = data_lines[index].replace(",", ".")
                     value = float(value_str)
-                   # value = float(data_lines[index])
+                    # value = float(data_lines[index])
                     matrix.set_value(i, j, value)
                     index += 1
         print(f"Матрица загружена из файла: {filename}")
