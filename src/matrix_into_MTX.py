@@ -4,9 +4,9 @@ class Matrix:
         self.rows = rows
         self.cols = cols
         self.data = []
-        for i in range(rows):
+        for _ in range(rows):
             row = []
-            for j in range(cols):
+            for _ in range(cols):
                 row.append(0.0)
             self.data.append(row)
 
@@ -69,7 +69,7 @@ def save_to_mtx(matrix, filename):
 
 def load_from_mtx(filename):
     try:
-        with open(filename, "r", encoding="utf-8") as file:
+        with open(filename, encoding="utf-8") as file:
             lines = file.readlines()
         # Пропускаем комментарии
         data_lines = []
