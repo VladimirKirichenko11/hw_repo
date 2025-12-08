@@ -1,7 +1,7 @@
 target-version = "py311"
 
+[lint]
 select = ["E", "F", "I", "B", "W", "Q", "C4", "N", "UP", "YTT", "RUF"]
-
 ignore = ["E501", "N802"]
 
 [format]
