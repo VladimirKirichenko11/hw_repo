@@ -79,7 +79,8 @@ def load_from_mtx(filename):
         if len(data_lines) < 2:
             print("Ошибка: неверный формат файла")
             return None
-        sizes = data_lines[0].split()
+        sizes_line = data_lines[0].replace(",", ".").replace(";", " ")
+        sizes = sizes_line.split()
         if len(sizes) != 2:
             print("Ошибка: неверный формат размеров матрицы")
             return None
