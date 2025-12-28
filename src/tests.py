@@ -1,6 +1,7 @@
-import unittest
 import random
-from sorting import heap_sort, bubble_sort, selection_sort
+import unittest
+
+from sorting import bubble_sort, heap_sort, selection_sort
 
 
 class Test(unittest.TestCase):
@@ -61,7 +62,7 @@ class Test(unittest.TestCase):
             size = random.randint(0, 50)
             test_cases.append([random.randint(-100, 100) for _ in range(size)])
         for test_arr in test_cases:
-            with self.subTest(input_array = test_arr):
+            with self.subTest(input_array=test_arr):
                 heap_result = heap_sort(test_arr)
                 bubble_result = bubble_sort(test_arr)
                 selection_result = selection_sort(test_arr)
@@ -84,7 +85,7 @@ class Test(unittest.TestCase):
             size = random.randint(0, 50)
             test_arr = [random.randint(-100, 100) for _ in range(size)]
             for sort_func in [heap_sort, bubble_sort, selection_sort]:
-                with self.subTest(sort_function = sort_func.__name__):
+                with self.subTest(sort_function=sort_func.__name__):
                     result = sort_func(test_arr)
                     for i in range(len(result) - 1):
                         self.assertLessEqual(result[i], result[i + 1])
